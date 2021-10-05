@@ -13,13 +13,6 @@
 		061A94B5270B0B84004ABF3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061A94B4270B0B84004ABF3B /* Assets.xcassets */; };
 		061A94B8270B0B84004ABF3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061A94B6270B0B84004ABF3B /* LaunchScreen.storyboard */; };
 		061A94C6270B25FD004ABF3B /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A94C5270B25FD004ABF3B /* HomeTests.swift */; };
-		061A94D5270B26F1004ABF3B /* ImageComparisonUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A94CF270B26F1004ABF3B /* ImageComparisonUtilities.swift */; };
-		061A94D6270B26F1004ABF3B /* XCUIApplication+CommonControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A94D0270B26F1004ABF3B /* XCUIApplication+CommonControls.swift */; };
-		061A94D7270B26F1004ABF3B /* ScreenshotWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A94D1270B26F1004ABF3B /* ScreenshotWriter.swift */; };
-		061A94D8270B26F1004ABF3B /* UIImage+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A94D2270B26F1004ABF3B /* UIImage+Orientation.swift */; };
-		061A94D9270B26F1004ABF3B /* XCUIScreenshot+Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A94D3270B26F1004ABF3B /* XCUIScreenshot+Crop.swift */; };
-		061A94DA270B26F1004ABF3B /* XCTestCase+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A94D4270B26F1004ABF3B /* XCTestCase+Additions.swift */; };
-		061A94DC270B2AF0004ABF3B /* UITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A94DB270B2AF0004ABF3B /* UITestBase.swift */; };
 		061A94DE270B2EBA004ABF3B /* ReferenceScreenshots in Resources */ = {isa = PBXBuildFile; fileRef = 061A94DD270B2EBA004ABF3B /* ReferenceScreenshots */; };
 /* End PBXBuildFile section */
 
@@ -43,13 +36,6 @@
 		061A94B9270B0B84004ABF3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		061A94C3270B25FD004ABF3B /* SnapshotTestsExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotTestsExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		061A94C5270B25FD004ABF3B /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
-		061A94CF270B26F1004ABF3B /* ImageComparisonUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageComparisonUtilities.swift; sourceTree = "<group>"; };
-		061A94D0270B26F1004ABF3B /* XCUIApplication+CommonControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+CommonControls.swift"; sourceTree = "<group>"; };
-		061A94D1270B26F1004ABF3B /* ScreenshotWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenshotWriter.swift; sourceTree = "<group>"; };
-		061A94D2270B26F1004ABF3B /* UIImage+Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Orientation.swift"; sourceTree = "<group>"; };
-		061A94D3270B26F1004ABF3B /* XCUIScreenshot+Crop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIScreenshot+Crop.swift"; sourceTree = "<group>"; };
-		061A94D4270B26F1004ABF3B /* XCTestCase+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Additions.swift"; sourceTree = "<group>"; };
-		061A94DB270B2AF0004ABF3B /* UITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestBase.swift; sourceTree = "<group>"; };
 		061A94DD270B2EBA004ABF3B /* ReferenceScreenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ReferenceScreenshots; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,24 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				061A94DD270B2EBA004ABF3B /* ReferenceScreenshots */,
-				061A94CE270B26F1004ABF3B /* SnapshotTests */,
 				061A94C5270B25FD004ABF3B /* HomeTests.swift */,
 			);
 			path = SnapshotTestsExampleUITests;
-			sourceTree = "<group>";
-		};
-		061A94CE270B26F1004ABF3B /* SnapshotTests */ = {
-			isa = PBXGroup;
-			children = (
-				061A94CF270B26F1004ABF3B /* ImageComparisonUtilities.swift */,
-				061A94D0270B26F1004ABF3B /* XCUIApplication+CommonControls.swift */,
-				061A94D1270B26F1004ABF3B /* ScreenshotWriter.swift */,
-				061A94D2270B26F1004ABF3B /* UIImage+Orientation.swift */,
-				061A94D3270B26F1004ABF3B /* XCUIScreenshot+Crop.swift */,
-				061A94D4270B26F1004ABF3B /* XCTestCase+Additions.swift */,
-				061A94DB270B2AF0004ABF3B /* UITestBase.swift */,
-			);
-			path = SnapshotTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,14 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				061A94D6270B26F1004ABF3B /* XCUIApplication+CommonControls.swift in Sources */,
 				061A94C6270B25FD004ABF3B /* HomeTests.swift in Sources */,
-				061A94D9270B26F1004ABF3B /* XCUIScreenshot+Crop.swift in Sources */,
-				061A94D8270B26F1004ABF3B /* UIImage+Orientation.swift in Sources */,
-				061A94DC270B2AF0004ABF3B /* UITestBase.swift in Sources */,
-				061A94D5270B26F1004ABF3B /* ImageComparisonUtilities.swift in Sources */,
-				061A94D7270B26F1004ABF3B /* ScreenshotWriter.swift in Sources */,
-				061A94DA270B26F1004ABF3B /* XCTestCase+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

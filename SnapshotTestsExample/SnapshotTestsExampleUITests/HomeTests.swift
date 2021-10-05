@@ -7,7 +7,7 @@
 
 import XCTest
 
-class HomeTests: SnapshotTest {
+class HomeTests: SnapshotTestCase {
     var statusBarCropInsets: UIEdgeInsets {
         UIEdgeInsets(top: 0, left: 0, bottom: 40 * UIScreen.main.scale, right: 0)
     }

@@ -1,6 +1,6 @@
 import XCTest
 
-class SnapshotTest: XCTestCase {
+class SnapshotTestCase: XCTestCase {
     var app: XCUIApplication!
 
     override var name: String { String(describing: type(of: self)) }
@@ -13,7 +13,7 @@ class SnapshotTest: XCTestCase {
     }
 }
 
-extension SnapshotTest {
+extension SnapshotTestCase {
     class TestCase {
         private let name: String
         private let testCase: XCTestCase
