@@ -1,6 +1,6 @@
 import XCTest
 
-class TestCaseBase: XCTestCase {
+class SnapshotTest: XCTestCase {
     var app: XCUIApplication!
 
     override var name: String { String(describing: type(of: self)) }
@@ -13,8 +13,8 @@ class TestCaseBase: XCTestCase {
     }
 }
 
-extension TestCaseBase {
-    class UITest {
+extension SnapshotTest {
+    class TestCase {
         private let name: String
         private let testCase: XCTestCase
         private let app: XCUIApplication
@@ -61,7 +61,7 @@ extension TestCaseBase {
                 .appendingPathComponent("ReferenceScreenshots")
                 .appendingPathComponent(testCase.name)
                 .appendingPathComponent(name)
-                .appendingPathComponent("\(imageName(at: step))-expected")
+                .appendingPathComponent("\(imageName(at: step))")
                 .appendingPathExtension("png")
 
             guard
@@ -77,7 +77,7 @@ extension TestCaseBase {
         }
     }
 
-    func createUITest(name: String, croppingInsets: UIEdgeInsets = .zero) -> UITest {
-        return UITest(name: name, testCase: self, app: app, croppingInsets: croppingInsets)
+    func createUITest(name: String, croppingInsets: UIEdgeInsets = .zero) -> TestCase {
+        return TestCase(name: name, testCase: self, app: app, croppingInsets: croppingInsets)
     }
 }

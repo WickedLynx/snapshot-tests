@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     let button: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Reset", for: .normal)
+        button.accessibilityIdentifier = "reset button"
         return button
     }()
 
