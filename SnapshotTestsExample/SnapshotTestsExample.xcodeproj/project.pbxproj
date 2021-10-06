@@ -14,6 +14,7 @@
 		061A94B8270B0B84004ABF3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061A94B6270B0B84004ABF3B /* LaunchScreen.storyboard */; };
 		061A94C6270B25FD004ABF3B /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A94C5270B25FD004ABF3B /* HomeTests.swift */; };
 		061A94DE270B2EBA004ABF3B /* ReferenceScreenshots in Resources */ = {isa = PBXBuildFile; fileRef = 061A94DD270B2EBA004ABF3B /* ReferenceScreenshots */; };
+		067B5053270D993B00D3210F /* SnapshotTests in Frameworks */ = {isa = PBXBuildFile; productRef = 067B5052270D993B00D3210F /* SnapshotTests */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		061A94C3270B25FD004ABF3B /* SnapshotTestsExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotTestsExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		061A94C5270B25FD004ABF3B /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
 		061A94DD270B2EBA004ABF3B /* ReferenceScreenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ReferenceScreenshots; sourceTree = "<group>"; };
+		067B5051270D993200D3210F /* ios-snapshot-testing-tools */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "ios-snapshot-testing-tools"; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				067B5053270D993B00D3210F /* SnapshotTests in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +63,11 @@
 		061A949F270B0B82004ABF3B = {
 			isa = PBXGroup;
 			children = (
+				067B5050270D993200D3210F /* Packages */,
 				061A94AA270B0B82004ABF3B /* SnapshotTestsExample */,
 				061A94C4270B25FD004ABF3B /* SnapshotTestsExampleUITests */,
 				061A94A9270B0B82004ABF3B /* Products */,
+				067B5046270D96F300D3210F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +100,21 @@
 				061A94C5270B25FD004ABF3B /* HomeTests.swift */,
 			);
 			path = SnapshotTestsExampleUITests;
+			sourceTree = "<group>";
+		};
+		067B5046270D96F300D3210F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		067B5050270D993200D3210F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				067B5051270D993200D3210F /* ios-snapshot-testing-tools */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +151,9 @@
 				061A94CA270B25FD004ABF3B /* PBXTargetDependency */,
 			);
 			name = SnapshotTestsExampleUITests;
+			packageProductDependencies = (
+				067B5052270D993B00D3210F /* SnapshotTests */,
+			);
 			productName = SnapshotTestsExampleUITests;
 			productReference = 061A94C3270B25FD004ABF3B /* SnapshotTestsExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -477,6 +500,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		067B5052270D993B00D3210F /* SnapshotTests */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SnapshotTests;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 061A94A0270B0B82004ABF3B /* Project object */;
 }

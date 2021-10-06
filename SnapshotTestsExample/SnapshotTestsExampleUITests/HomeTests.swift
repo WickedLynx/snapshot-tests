@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import SnapshotTests
 
 class HomeTests: SnapshotTestCase {
     var statusBarCropInsets: UIEdgeInsets {

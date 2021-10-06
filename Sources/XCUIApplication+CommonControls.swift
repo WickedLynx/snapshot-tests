@@ -1,7 +1,7 @@
 import Foundation
 import XCTest
 
-extension XCUIApplication {
+public extension XCUIApplication {
 
     func wait(for duration: TimeInterval = 1) {
         let semaphore = DispatchSemaphore(value: 0)
@@ -45,7 +45,7 @@ extension XCUIApplication {
     }
 }
 
-extension XCUIElement {
+public extension XCUIElement {
     var centerCoordinate: XCUICoordinate {
         coordinate(withNormalizedOffset: .init(dx: 0.5, dy: 0.5))
     }

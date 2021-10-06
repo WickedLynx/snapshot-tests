@@ -1,11 +1,11 @@
 import XCTest
 
-class SnapshotTestCase: XCTestCase {
-    var app: XCUIApplication!
+open class SnapshotTestCase: XCTestCase {
+    private(set) public var app: XCUIApplication!
 
-    override var name: String { String(describing: type(of: self)) }
+    open override var name: String { String(describing: type(of: self)) }
 
-    override func setUpWithError() throws {
+    open override func setUpWithError() throws {
         continueAfterFailure = true
         let app = XCUIApplication()
         self.app = app
@@ -13,7 +13,7 @@ class SnapshotTestCase: XCTestCase {
     }
 }
 
-extension SnapshotTestCase {
+public extension SnapshotTestCase {
     class TestCase {
         private let name: String
         private let testCase: XCTestCase
@@ -32,7 +32,7 @@ extension SnapshotTestCase {
             self.imageCroppingInsets = croppingInsets
         }
 
-        func run(_ steps: [(XCUIApplication) -> ()]) {
+        public func run(_ steps: [(XCUIApplication) -> ()]) {
             screenshotWriter.clear()
             steps.enumerated().forEach { (i, step) in
                 let currentStep = i + 1
