@@ -14,7 +14,7 @@
 		061A94B8270B0B84004ABF3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061A94B6270B0B84004ABF3B /* LaunchScreen.storyboard */; };
 		061A94C6270B25FD004ABF3B /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A94C5270B25FD004ABF3B /* HomeTests.swift */; };
 		061A94DE270B2EBA004ABF3B /* ReferenceScreenshots in Resources */ = {isa = PBXBuildFile; fileRef = 061A94DD270B2EBA004ABF3B /* ReferenceScreenshots */; };
-		067B5053270D993B00D3210F /* SnapshotTests in Frameworks */ = {isa = PBXBuildFile; productRef = 067B5052270D993B00D3210F /* SnapshotTests */; };
+		067B50A2270EE6D500D3210F /* SnapshotTests in Frameworks */ = {isa = PBXBuildFile; productRef = 067B50A1270EE6D500D3210F /* SnapshotTests */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				067B5053270D993B00D3210F /* SnapshotTests in Frameworks */,
+				067B50A2270EE6D500D3210F /* SnapshotTests in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +152,7 @@
 			);
 			name = SnapshotTestsExampleUITests;
 			packageProductDependencies = (
-				067B5052270D993B00D3210F /* SnapshotTests */,
+				067B50A1270EE6D500D3210F /* SnapshotTests */,
 			);
 			productName = SnapshotTestsExampleUITests;
 			productReference = 061A94C3270B25FD004ABF3B /* SnapshotTestsExampleUITests.xctest */;
@@ -502,7 +502,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		067B5052270D993B00D3210F /* SnapshotTests */ = {
+		067B50A1270EE6D500D3210F /* SnapshotTests */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SnapshotTests;
 		};

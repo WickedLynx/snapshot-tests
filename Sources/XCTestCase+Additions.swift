@@ -32,6 +32,9 @@ extension XCTestCase {
                 }
                 if let difference = difference {
                     screenshotWriter.save(screenshot: difference, named: "\(prefix)-difference")
+                    let attachment = XCTAttachment(image: difference)
+                    attachment.lifetime = .keepAlways
+                    add(attachment)
                 }
             }
         }
