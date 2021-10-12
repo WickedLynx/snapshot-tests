@@ -26,20 +26,30 @@ extension XCTestCase {
         if
             !doesMatch || XCTestCase.alwaysWriteScreenshots {
             if writeResults || XCTestCase.alwaysWriteScreenshots {
-                screenshotWriter.save(screenshot: result, named: "\(prefix)-result")
+                let imageName = "\(prefix)-result"
+                screenshotWriter.save(screenshot: result, named: imageName)
+                attach(image: result, named: imageName)
                 if let expected = expected {
-                    screenshotWriter.save(screenshot: expected, named: "\(prefix)-expected")
+                    let imageName = "\(prefix)-expected"
+                    screenshotWriter.save(screenshot: expected, named: imageName)
+                    attach(image: expected, named: imageName)
                 }
                 if let difference = difference {
-                    screenshotWriter.save(screenshot: difference, named: "\(prefix)-difference")
-                    let attachment = XCTAttachment(image: difference)
-                    attachment.lifetime = .keepAlways
-                    add(attachment)
+                    let imageName = "\(prefix)-difference"
+                    screenshotWriter.save(screenshot: difference, named: imageName)
+                    attach(image: difference, named: imageName)
                 }
             }
         }
         if !doesMatch {
             XCTFail(message)
         }
+    }
+
+    func attach(image: UIImage, named name: String) {
+        let attachment = XCTAttachment(image: image)
+        attachment.lifetime = .keepAlways
+        attachment.name = name
+        add(attachment)
     }
 }
